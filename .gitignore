@@ -1,0 +1,38 @@
+# Exclude specific folders
+bbb/
+cli/
+mundo/
+
+# Exclude common temporary and cache files
+*.tmp
+*.temp
+*.log
+*.cache
+*~
+.DS_Store
+Thumbs.db
+
+# Exclude sensitive files
+*.zip
+*.tar.gz
+*.rar
+
+# Exclude backup files
+*.bak
+*.backup
+*.old
+
+# Exclude IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Exclude system files
+.htaccess
+*.ini
+
+# You can add more folders/files to exclude here as needed
+# Example:
+# folder_name/
+# specific_file.txt

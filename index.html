@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!--Métadonnées de référencement et d'encodage-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio de Aaron PESCASIO">
+    <meta name="author" content="Aaron PESCASIO">
+    <title>Aaron PESCASIO - Accueil</title> <!--Nom de l'onglet-->
+    <!-- CSS principal -->
+    <link href="/pff/bootstrap.css" rel="stylesheet">
+    <!-- CSS secondaire -->
+    <link href="/pff/starter-template.css" rel="stylesheet">
+    <!--Changement de l'icone dans l'onglet-->
+    <link rel="shortcut icon" href="/pff/memo-128.png" type="image/x-icon">
+    <link rel="icon" href="/pff/memo-128.png" type="image/png">
+    <link rel="shortcut icon" href="/pff/memo-128.png" type="image/png">
+    <link rel="apple-touch-icon" href="/pff/memo-128.png">
+</head>
+
+
+<body>
+    <div id="filterbanner"></div> <!--Filtre-->
+    <div id="banner" style="background-image: url(&quot;https://i.ibb.co/hfgvL7q/bg14.jpg&quot;);"></div>
+    <!--Background-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top"> <!--Menu de navigation-->
+        <div id="fileContents"></div>
+    </nav>
+
+    <main class="container">
+        <div class="starter-template text-center py-5 px-3"> <!--Paragraphe de présentation-->
+            <h1>Bienvenue sur le portfolio de Aaron (Iso) Pescasio.</h1>
+            <p class="lead">
+                Master 2 Alternant Chef de Projet IT (Contact: <a href="mailto:him@apescasio.fr"
+                    style="color: inherit; text-decoration: none; font-weight: bold;">him@apescasio.fr</a>).
+                <br><br>
+
+                Le Ciel ne fermerait jamais tous tes chemins, tant que tu veux marcher — il y aura une route sur
+                laquelle tu pourras avancer. Il n’existe pas de situation absolument désespérée dans ce monde, seulement
+                des gens qui désespèrent. Défie ton statut, défie tes limites, défie ton destin ! Même si je n’atteins
+                pas mon but à la fin, et alors ?
+                <br>
+
+                <br>
+                Voir mes plus récents projets.<br><br>
+                Inspired by Louis Gambart.
+                <br> <br>
+                <a href="https://iso.apescasio.fr" class="btn btn-primary">iso.apescasio.fr </a><br><br>
+                <a href="https://midl.apescasio.fr" class="btn btn-primary">midl.apescasio.fr </a><br><br>
+                <a href="https://art.apescasio.fr" class="btn btn-primary">art.apescasio.fr </a><br><br>
+                <a href="https://memo.apescasio.fr" class="btn btn-primary">memo.apescasio.fr</a><br><br>
+                <a href="https://cli.apescasio.fr" class="btn btn-primary">cli.apescasio.fr</a><br><br>
+                <a href="https://bbb.apescasio.fr" class="btn btn-primary">bbb.apescasio.fr</a><br><br>
+                <a href="https://mundo.apescasio.fr" class="btn btn-primary">mundo.apescasio.fr</a><br><br>
+                <a href="https://lethimcook.fr" class="btn btn-primary">lethimcook.fr</a>
+
+        </div>
+    </main>
+
+    <footer id="index_foot"> <!--Pied de page-->
+        <p>© <span id="current-year"></span> Aaron (Iso) Pescasio | Tous droits réservés<br>
+        </p>
+    </footer>
+    <script src="/pff/bootstrap.js"></script> <!--Script JS pour le menu déroulant-->
+    <script src="/pff/background.js"></script> <!--Script JS pour les images de fond aléatoires-->
+    <script src="/pff/include.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+    <script>
+        document.addEventListener("touchstart", function () { }, true);
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <script src="/pff/include.js"></script>
+</body>
+
+</html>
